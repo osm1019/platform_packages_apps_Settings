@@ -1178,7 +1178,10 @@ public final class Utils extends com.android.settingslib.Utils {
             return input.toLowerCase();
         }
         return input;
-    public static boolean isFaceDisabledByAdmin(Context context) {
+    
+    }
+ 
+   public static boolean isFaceDisabledByAdmin(Context context) {
         DevicePolicyManager devicePolicyManager = (DevicePolicyManager) context.getSystemService(Context.DEVICE_POLICY_SERVICE);
         try {
             if (devicePolicyManager.getPasswordQuality(null) > DevicePolicyManager.PASSWORD_QUALITY_MANAGED) {
